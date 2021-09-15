@@ -827,9 +827,7 @@ header{
 
 .box-contacto-lista>ul>li{
     padding: 12px 0px 12px 7px;
-    margin-left: 18px;
-    /* list-style-image: image('img/twitter.png'); 
-    INVESTIGAR COMO HACERLO*/
+    list-style: none;
 }
 
 .box-contacto-lista>ul>li>a{
@@ -837,16 +835,21 @@ header{
     color: #af15d6;
 }
 
+.box-contacto-lista>ul>li>a>.fa-instagram{
+    margin: 0px 10px 0px 0px;
+}
+
 /* Hover de la etiqueta "ul" "li" "a" de la caja de CONTACTO */
 
 .box-contacto-lista>ul>li:hover{
     padding: 12px 0px 12px 7px;
-    margin-left: 18px;
-    /* list-style-image: image('img/twitter.png'); 
-    INVESTIGAR COMO HACERLO*/
 }
 
 .box-contacto-lista>ul>li>a:hover{
     text-decoration: none;
     color: #e246bb;
+}
+
+.box-contacto-lista>ul>li>a>.fa-instagram:hover{
+    margin: 0px 10px 0px 0px;
 }
