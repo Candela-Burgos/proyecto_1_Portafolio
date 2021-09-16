@@ -5,6 +5,10 @@
     font-family: 'Glory', sans-serif;
 }
 
+/* body{
+    box-shadow: -100px 0px 30px 0px rgb(228, 225, 225);
+} */
+
 /* Comienzo a editar la NAVEGACION */
 
 header{
@@ -445,15 +449,18 @@ header{
 
 .box-proyectos-boxes{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
+    /* justify-content: center; */
+    margin: 0 auto;
+    flex-wrap: wrap;                /* TERMINARLO */
+    /* margin-top: 50px; */
     width: 1000px;
     height: 500px;
 }
 
 .box-proyectos-1{
+    text-decoration: none;
+    color: #2e2e2e;
+    font-size: 1.2rem;
     background-color: #ffffff;
     width: 290px;
     height: 290px;
@@ -467,6 +474,9 @@ header{
 }
 
 .box-proyectos-2{
+    text-decoration: none;
+    color: #2e2e2e;
+    font-size: 1.2rem;
     background-color: #ffffff;
     width: 290px;
     height: 290px;
@@ -480,6 +490,9 @@ header{
 }
 
 .box-proyectos-3{
+    text-decoration: none;
+    color: #2e2e2e;
+    font-size: 1.2rem;
     background-color: #ffffff;
     width: 290px;
     height: 290px;
@@ -493,6 +506,9 @@ header{
 }
 
 .box-proyectos-4{
+    text-decoration: none;
+    color: #2e2e2e;
+    font-size: 1.2rem;
     background-color: #ffffff;
     width: 290px;
     height: 290px;
@@ -506,6 +522,9 @@ header{
 }
 
 .box-proyectos-5{
+    text-decoration: none;
+    color: #2e2e2e;
+    font-size: 1.2rem;
     background-color: #ffffff;
     width: 290px;
     height: 290px;
@@ -519,6 +538,9 @@ header{
 }
 
 .box-proyectos-6{
+    text-decoration: none;
+    color: #2e2e2e;
+    font-size: 1.2rem;
     background-color: #ffffff;
     width: 290px;
     height: 290px;
@@ -532,6 +554,9 @@ header{
 }
 
 .box-proyectos-7{
+    text-decoration: none;
+    color: #2e2e2e;
+    font-size: 1.2rem;
     background-color: #ffffff;
     width: 290px;
     height: 290px;
@@ -579,64 +604,6 @@ header{
 .box-proyectos-7>img{
     margin: 20px;
     
-}
-
-/* Etiqueta "a" de las cajas de PROYECTOS */
-
-.box-proyectos-1>a{
-    text-decoration: none;
-    color: #2e2e2e;
-    font-size: 20px;
-    transition-property: color;
-    transition-duration: .3s;    
-}
-
-.box-proyectos-2>a{
-    text-decoration: none;
-    color: #2e2e2e;
-    font-size: 20px;
-    transition-property: color;
-    transition-duration: .3s;    
-}
-
-.box-proyectos-3>a{
-    text-decoration: none;
-    color: #2e2e2e;
-    font-size: 20px;
-    transition-property: color;
-    transition-duration: .3s;    
-}
-
-.box-proyectos-4>a{
-    text-decoration: none;
-    color: #2e2e2e;
-    font-size: 20px;
-    transition-property: color;
-    transition-duration: .3s;    
-}
-
-.box-proyectos-5>a{
-    text-decoration: none;
-    color: #2e2e2e;
-    font-size: 20px;
-    transition-property: color;
-    transition-duration: .3s;    
-}
-
-.box-proyectos-6>a{
-    text-decoration: none;
-    color: #2e2e2e;
-    font-size: 20px;
-    transition-property: color;
-    transition-duration: .3s;    
-}
-
-.box-proyectos-7>a{
-    text-decoration: none;
-    color: #2e2e2e;
-    font-size: 20px;
-    transition-property: color;
-    transition-duration: .3s;    
 }
 
 /* Etiqueta "p" de las cajas de PROYECTOS */
@@ -738,43 +705,6 @@ header{
     border: 1px solid #af15d6;
     color: #af15d6;
     box-shadow: 0px 0px 10px 2px #af15d6;
-    transition: .3s;
-}
-
-/* Hover de la etiqueta "a" de las cajas de PROYECTOS */
-
-.box-proyectos-1>a:hover{
-    color: #af15d6;
-    transition: .3s;
-}
-
-.box-proyectos-2>a:hover{
-    color: #af15d6;
-    transition: .3s;
-}
-
-.box-proyectos-3>a:hover{
-    color: #af15d6;
-    transition: .3s;
-}
-
-.box-proyectos-4>a:hover{
-    color: #af15d6;
-    transition: .3s;
-}
-
-.box-proyectos-5>a:hover{
-    color: #af15d6;
-    transition: .3s;
-}
-
-.box-proyectos-6>a:hover{
-    color: #af15d6;
-    transition: .3s;
-}
-
-.box-proyectos-7>a:hover{
-    color: #af15d6;
     transition: .3s;
 }
 
