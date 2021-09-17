@@ -113,7 +113,7 @@ header{
 }
 
 .box-hola-titulo>h1{
-    width: 75%;
+    max-width: 75%;
     font-size: 5.625rem;
     text-transform: uppercase;
     color: #af15d6;
@@ -130,7 +130,7 @@ header{
 }
 
 .box-hola-titulo>.boton{
-    width: 35%;
+    max-width: 31%;
     word-spacing: 2px;
     text-decoration: none;
     color: #ffffff;
