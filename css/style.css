@@ -449,11 +449,11 @@ header{
 
 .box-proyectos-boxes{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;/* 
-    padding-left: 30px; */
-    width: 1030px;
-    height: 1200px;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    width: 950px;
+    height: 950px;
 }
 
 .box-proyectos-1{
