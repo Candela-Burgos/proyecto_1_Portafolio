@@ -197,9 +197,9 @@ header{
 }
 
 .box-conoc{
-    flex: 0 1 22%;
+    flex: 0 1 25%;
     background-color: #ffffff;
-    height: 44%;
+    height: 45%;
     border: 1px solid #a8a8a8;
     border-radius: 8px;
     box-shadow: 0px 0px 10px 2px #a8a8a8;
