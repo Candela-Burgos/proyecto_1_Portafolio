@@ -11,7 +11,9 @@
     box-shadow: inset -20px 0px 30px 0px rgb(228, 225, 225);
 } */
 
-/* Comienzo a editar la NAVEGACION */
+/******************
+     NAVEGACION 
+*******************/
 
 header{
     display: flex;
@@ -79,7 +81,9 @@ header{
     color: #af15d6;    
 }
 
-/* Comienzo a editar la seccion HOLA */
+/******************
+    Seccion HOLA 
+*******************/
 
 .seccion-hola{
     display: flex;
@@ -152,7 +156,9 @@ header{
     transition: .4s;
 }
 
-/* Comienzo a editar la seccion CONOCIMIENTOS */
+/***********************
+  Seccion CONOCIMIENTOS
+************************/
 
 .seccion-conoc{
     background-color: #f5f5f5;
@@ -223,7 +229,9 @@ header{
     letter-spacing: 1px;
 }
 
-/* Hover de las cajas de CONOCIMIENTOS */
+/***********************
+   Hover CONOCIMIENTOS
+************************/
 
 .box-conoc:hover{
     border: 1px solid #af15d6;
@@ -232,7 +240,9 @@ header{
     transition: .3s;
 }
 
-/* Comienzo a editar la seccion CITA */
+/***********************
+      Seccion CITA
+************************/
 
 .seccion-cita{
     display: flex;
@@ -275,7 +285,9 @@ header{
     width: 40%;
 }
 
-/* Comienzo a editar la seccion PROYECTOS */
+/***********************
+   Seccion PROYECTOS
+************************/
 
 .seccion-proyectos{
     background-color: #ffffff;
@@ -310,8 +322,6 @@ header{
     margin: 1.125em 0em 1.125em 0em;
 }
 
-/* Modificando las cajas de PROYECTOS */
-
 .box-proyectos-boxes{
     display: flex;
     justify-content: space-between;
@@ -339,13 +349,19 @@ header{
     transition-duration: .3s, .3s, .3s;
 }
 
-/* Etiqueta "img" de las cajas de PROYECTOS */
+.box-proyectos:focus{
+    border: 1px solid #af15d6;
+    color: #af15d6;
+    box-shadow: 0px 0px 10px 2px #af15d6
+}
 
 .box-proyectos>img{
     margin-bottom: 1.25em;
 }
 
-/* Hover de las cajas de PROYECTOS */
+/***********************
+    Hover PROYECTOS
+************************/
 
 .box-proyectos:hover{
     border: 1px solid #af15d6;
@@ -354,7 +370,9 @@ header{
     transition: .3s;
 }
 
-/* Comienzo a editar el CONTACTO */
+/***********************
+    Seccion CONTACTO
+************************/
 
 .seccion-contacto{
     background-color: #f5f5f5;
@@ -378,8 +396,9 @@ header{
     justify-content: space-between;
 }
 
-/* Edito la caja contactame */
-
+/***********************
+    Caja CONTACTAME
+************************/
 .box-contacto-contactame{
     display: flex;
     flex-direction: column;
@@ -442,34 +461,71 @@ header{
     margin-right: 0.625em;
 }
 
-/* Hover de la etiqueta "ul" "li" "a" de la caja de CONTACTO */
+/***********************
+    Hover CONTACTAME
+************************/
 
 .box-contacto-lista>ul>li>a:hover{
     text-decoration: none;
     color: #e246bb;
 }
 
-.box-contacto-lista>ul>li>a>.fa-instagram-square:hover{
+/* 
+.box-contacto-links>.fa-instagram-square:hover{
     font-size: 1.375rem;
     margin-right: 0.625em;
+    width: 5%;
+    height: 100%;
+    padding: .2em;
+    border-radius: 50%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #af15d6;
+    transition: .4s;
 }
 
-.box-contacto-lista>ul>li>a>.fa-github-alt:hover{
+.box-contacto-links>.fa-github-alt:hover{
     font-size: 1.375rem;
     margin-right: 0.625em;
+    width: 5%;
+    height: 100%;
+    padding: .2em;
+    border-radius: 50%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #af15d6;
+    transition: .4s;
 }
 
-.box-contacto-lista>ul>li>a>.fa-linkedin-in:hover{
+.box-contacto-links>.fa-linkedin-in:hover{
     font-size: 1.375rem;
     margin-right: 0.625em;
+    width: 5%;
+    height: 100%;
+    padding: .2em;
+    border-radius: 50%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #af15d6;
+    transition: .4s;
 }
 
-.box-contacto-lista>ul>li>a>.fa-envelope:hover{
+.box-contacto-links>.fa-envelope:hover{
     font-size: 1.375rem;
     margin-right: 0.625em;
-}
+    width: 5%;
+    height: 100%;
+    padding: .2em;
+    border-radius: 50%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #af15d6;
+    transition: .4s;
+} */
 
-/* Edito la caja Escribime */
+/***********************
+     Caja ESCRIBIME
+************************/
 
 .box-contacto-escribime{
     display: flex;
@@ -589,6 +645,7 @@ label{
     padding: .5em .8em;
     margin: .6em 0em;
     outline-style: none;
+    resize: none;
 }
 
 .box-textarea>textarea:focus{
@@ -618,4 +675,82 @@ label{
     box-shadow: 0px 0px 3px 1px #e246bb;
     background-color: #e246bb;
     transition: .4s;
+}
+
+/********************* 
+    Seccion FOOTER
+*********************/
+
+.bg-img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/ladrillos.jpg);
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+}
+
+.lista>.centrar-ul{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: 1em 0em;
+    list-style: none;
+}
+
+.lista>.centrar-ul>li{
+    margin: 0em .5em 0em .5em;
+}
+
+.lista>.centrar-ul>li>a{
+    font-size: 1em;
+    color: #2e2e2e;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.lista>.centrar-ul>li>a:hover{
+    color: #af15d6;
+    text-shadow: 1px 1px 1px #af15d6;
+    transition: .3s;
+}
+
+.lista>.centrar-ul>li>.icon-a{
+    font-size: 1.5em;
+    color: #af15d6;
+    margin: 0em .5em 0em .5em;
+    text-align: center;
+    background-color: #ffffff;
+    padding: .3em .4em;
+    border-radius: 50%;
+}
+
+.lista>.centrar-ul>li>.icon-a:hover{
+    margin: 0em .5em 0em .5em;
+    background-color: transparent;
+    border: 1px solid #af15d6;
+    transition: .3s;
+}
+
+.lista>p{
+    color: #2e2e2e;
+    text-align: center;
+    font-size: 1rem;
+    width: 20%;
+    height: 8%;
+    margin: 1em 0em;
 }
