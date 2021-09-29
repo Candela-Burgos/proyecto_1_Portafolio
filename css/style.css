@@ -8,7 +8,7 @@
 /* body{
     width: 100%;
     height: 100%;
-    box-shadow: inset -20px 0px 30px 0px rgb(228, 225, 225);
+    box-shadow: inset -5px 0px 20px 0px #a3a3a3;
 } */
 
 /******************
@@ -22,7 +22,7 @@ header{
     max-height: 13%;
     width: 100%;
     padding: 1.9em 0em;
-    box-shadow: 0px 3px 30px 0px rgb(228, 225, 225);
+    box-shadow: 0px 3px 30px 0px #a3a3a3;
     background-color: #ffffff; 
     position: fixed;
     top: 0;
@@ -136,6 +136,7 @@ header{
 }
 
 .box-hola-titulo>.boton{
+    flex: 0 1 30%;
     max-width: 30%;
     word-spacing: 2px;
     text-decoration: none;
@@ -333,6 +334,10 @@ header{
 }
 
 .box-proyectos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     flex: 0 1 31%;
     text-decoration: none;
     color: #2e2e2e;
@@ -437,91 +442,66 @@ header{
 
 .box-contacto-lista>ul>li>a{
     text-decoration: none;
-    color: #af15d6;
+    color: #2e2e2e;
     padding-bottom: 0.25em;
 }
 
-.box-contacto-lista>ul>li>a>.fa-instagram-square{
-    font-size: 1.375rem;
-    margin-right: 0.625em;
+.box-contacto-links{
+    display: flex;
+    align-items: center;
 }
 
-.box-contacto-lista>ul>li>a>.fa-github-alt{
-    font-size: 1.375rem;
-    margin-right: 0.625em;
+.box-contacto-links>.fa-instagram::before{
+    content: "/f16d";
 }
 
-.box-contacto-lista>ul>li>a>.fa-linkedin-in{
-    font-size: 1.375rem;
-    margin-right: 0.625em;
+.box-contacto-links>.fa-github-alt::before{
+    content: "/f113";
 }
 
-.box-contacto-lista>ul>li>a>.fa-envelope{
-    font-size: 1.375rem;
-    margin-right: 0.625em;
+.box-contacto-links>.fa-linkedin-in::before{
+    content: "/f0e1";
 }
 
+.box-contacto-links>.fa-envelope::before{
+    content: "/f0e0";
+}
+
+.box-contacto-links>.fa-instagram, .box-contacto-links>.fa-github-alt, .box-contacto-links>.fa-linkedin-in, .box-contacto-links>.fa-envelope{
+    font-size: 1.5rem;
+    margin-right: 0.6em;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 50%; 
+    /*padding: .1em .2em; */
+    /* font-size: 1.5em;
+    color: #af15d6;
+    text-align: center;
+    background-color: #ffffff;
+    padding: .3em .4em;
+    border-radius: 50%;
+    border: 1px solid #ffffff; */
+}
+ 
 /***********************
     Hover CONTACTAME
 ************************/
 
 .box-contacto-lista>ul>li>a:hover{
-    text-decoration: none;
-    color: #e246bb;
+    color: #af15d6;
 }
 
-/* 
-.box-contacto-links>.fa-instagram-square:hover{
-    font-size: 1.375rem;
-    margin-right: 0.625em;
-    width: 5%;
-    height: 100%;
+.box-contacto-links>.fa-instagram:hover, .box-contacto-links>.fa-github-alt:hover, .box-contacto-links>.fa-linkedin-in:hover, .box-contacto-links>.fa-envelope:hover{
     padding: .2em;
     border-radius: 50%;
     text-align: center;
     color: #ffffff;
     background-color: #af15d6;
-    transition: .4s;
-}
-
-.box-contacto-links>.fa-github-alt:hover{
-    font-size: 1.375rem;
-    margin-right: 0.625em;
-    width: 5%;
-    height: 100%;
-    padding: .2em;
-    border-radius: 50%;
-    text-align: center;
+    border: 1px solid #af15d6;
     color: #ffffff;
-    background-color: #af15d6;
-    transition: .4s;
-}
-
-.box-contacto-links>.fa-linkedin-in:hover{
-    font-size: 1.375rem;
-    margin-right: 0.625em;
-    width: 5%;
-    height: 100%;
-    padding: .2em;
-    border-radius: 50%;
-    text-align: center;
-    color: #ffffff;
-    background-color: #af15d6;
-    transition: .4s;
-}
-
-.box-contacto-links>.fa-envelope:hover{
-    font-size: 1.375rem;
-    margin-right: 0.625em;
-    width: 5%;
-    height: 100%;
-    padding: .2em;
-    border-radius: 50%;
-    text-align: center;
-    color: #ffffff;
-    background-color: #af15d6;
-    transition: .4s;
-} */
+    transition: .3s;
+} 
 
 /***********************
      Caja ESCRIBIME
@@ -688,7 +668,7 @@ label{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/ladrillos.jpg);
+    background-image: url(../img/footer.jpg);
     height: 300px;
     background-position: center;
     background-repeat: no-repeat;
@@ -732,15 +712,14 @@ label{
 .lista>.centrar-ul>li>.icon-a{
     font-size: 1.5em;
     color: #af15d6;
-    margin: 0em .5em 0em .5em;
     text-align: center;
     background-color: #ffffff;
     padding: .3em .4em;
     border-radius: 50%;
+    border: 1px solid #ffffff;
 }
 
 .lista>.centrar-ul>li>.icon-a:hover{
-    margin: 0em .5em 0em .5em;
     background-color: transparent;
     border: 1px solid #af15d6;
     transition: .3s;
