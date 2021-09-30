@@ -5,11 +5,11 @@
     font-family: 'Glory', sans-serif;
 }
 
-/* body{
+body{
     width: 100%;
     height: 100%;
     box-shadow: inset -5px 0px 20px 0px #a3a3a3;
-} */
+}
 
 /******************
      NAVEGACION 
@@ -22,7 +22,7 @@ header{
     max-height: 13%;
     width: 100%;
     padding: 1.9em 0em;
-    box-shadow: 0px 3px 30px 0px #a3a3a3;
+    box-shadow: 0px 3px 30px 0px #dddddd;
     background-color: #ffffff; 
     position: fixed;
     top: 0;
@@ -112,7 +112,7 @@ header{
 }
 
 .box-hola-titulo>.hola{
-    width: 35%;
+    max-width: 35%;
     font-size: 2.5rem;
     font-weight: bold;
     color: #2e2e2e;
@@ -120,6 +120,7 @@ header{
 
 .box-hola-titulo>h1{
     max-width: 75%;
+    min-width: 75%;
     font-size: 5.625rem;
     text-transform: uppercase;
     color: #af15d6;
@@ -148,6 +149,7 @@ header{
     box-shadow: 0px 0px 3px 1px #af15d6;
     transition-property: background-color, color, box-shadow;
     transition-duration: .4s, .4s, .4s;
+    text-align: center;
 }
 
 .box-hola-titulo>.boton:hover{
@@ -163,6 +165,7 @@ header{
 
 .seccion-conoc{
     background-color: #f5f5f5;
+    box-shadow: inset -5px -10px 20px 0px #a3a3a3;
     display: flex;
     width: 100%;
     height: 500%;
@@ -291,11 +294,11 @@ header{
 ************************/
 
 .seccion-proyectos{
-    background-color: #ffffff;
     display: flex;
     width: 100%;
     height: 100%;
     padding: 8.125em 2.5em;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: center;
 }
@@ -334,6 +337,7 @@ header{
 }
 
 .box-proyectos{
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -381,6 +385,7 @@ header{
 
 .seccion-contacto{
     background-color: #f5f5f5;
+    box-shadow: inset -5px -10px 20px 0px #a3a3a3;
     display: flex;
     width: 100%;
     height: 90%;
@@ -436,7 +441,7 @@ header{
 .box-contacto-lista>ul>li{
     display: flex;
     width: 100%;
-    padding: 0.75em 0em 0.75em 0.438em;
+    padding: .2em 0em .2em .1em;
     list-style: none;
 }
 
@@ -452,29 +457,29 @@ header{
 }
 
 .box-contacto-links>.fa-instagram::before{
-    content: "/f16d";
+    content: "\f16d";
 }
 
 .box-contacto-links>.fa-github-alt::before{
-    content: "/f113";
+    content: "\f113";
 }
 
 .box-contacto-links>.fa-linkedin-in::before{
-    content: "/f0e1";
+    content: "\f0e1";
 }
 
 .box-contacto-links>.fa-envelope::before{
-    content: "/f0e0";
+    content: "\f0e0";
 }
 
 .box-contacto-links>.fa-instagram, .box-contacto-links>.fa-github-alt, .box-contacto-links>.fa-linkedin-in, .box-contacto-links>.fa-envelope{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin-right: 0.6em;
     text-align: center;
     background-color: #ffffff;
     border: 1px solid #ffffff;
     border-radius: 50%; 
-    /*padding: .1em .2em; */
+    padding: .2em;
     /* font-size: 1.5em;
     color: #af15d6;
     text-align: center;
@@ -493,7 +498,6 @@ header{
 }
 
 .box-contacto-links>.fa-instagram:hover, .box-contacto-links>.fa-github-alt:hover, .box-contacto-links>.fa-linkedin-in:hover, .box-contacto-links>.fa-envelope:hover{
-    padding: .2em;
     border-radius: 50%;
     text-align: center;
     color: #ffffff;
@@ -646,6 +650,7 @@ label{
     box-shadow: 0px 0px 3px 1px #af15d6;
     border: none;
     border-radius: 20px;
+    text-align: center;
     cursor: pointer;
     transition-property: box-shadow, background-color;
     transition-duration: .4s, .4s;
@@ -733,3 +738,7 @@ label{
     height: 8%;
     margin: 1em 0em;
 }
+
+/********************* 
+     Media Query
+*********************/
