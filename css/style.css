@@ -275,7 +275,7 @@ header{
     margin-bottom: 1.875em;
 }
 
-.box-cita-principal>p{
+.box-cita-principal>cite{
     font-family: 'Risque', cursive;
     color: #ffffff;
     font-size: 1.875rem;
