@@ -216,7 +216,8 @@ header{
 .box-conoc{
     flex: 0 1 25%;
     background-color: #ffffff;
-    height: 45%;
+    max-width: 25%;
+    max-height: 45%;
     border: 1px solid #a8a8a8;
     border-radius: 8px;
     box-shadow: 0px 0px 10px 2px #a8a8a8;
@@ -422,13 +423,21 @@ header{
     padding-right: 1.25em;
 }
 
-.box-contacto-contactame>h2{
+.box-contacto-texto{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    padding-right: 1.25em;
+}
+
+.box-contacto-texto>h2{
     width: 100%;
     font-size: 3.125rem;
     margin-bottom: 0.5em;
 }
 
-.box-contacto-contactame>p{
+.box-contacto-texto>p{
     font-size: 1.063rem;
     width: 90%;
     margin-bottom: 0.5em;
@@ -439,7 +448,7 @@ header{
     display: flex;
     align-content:space-around;
     width: 100%;
-    height: 48%;
+    height: 50%;
     margin-top: 0.5em;
 }
 
@@ -485,13 +494,6 @@ header{
     border: 1px solid #ffffff;
     border-radius: 50%; 
     padding: .2em;
-    /* font-size: 1.5em;
-    color: #af15d6;
-    text-align: center;
-    background-color: #ffffff;
-    padding: .3em .4em;
-    border-radius: 50%;
-    border: 1px solid #ffffff; */
 }
  
 /***********************
@@ -646,6 +648,7 @@ label{
 
 .boton-enviar{
     display: flex;
+    justify-content: center;
     width: 20%;
     height: 10%;
     font-size: 1rem;
@@ -766,11 +769,11 @@ label{
     }
 
     .box-proyectos-principal{
-        max-width: 100%;
+        width: 100%;
     }
 
     .box-proyectos-boxes{
-        max-width: 100%;
+        width: 100%;
     }
 }
 
@@ -796,6 +799,78 @@ label{
         max-width: 70%;
         margin-top: 3em;
     }
+}
 
-    /* PROYECTOS!!!! */
+@media (max-width: 1108px){
+    .box-conoc-principal{
+        width: 100%;
+    }
+}
+
+@media (max-width: 975px){
+    .box-proyectos{
+        max-width: 30%;
+        max-height: 30%;
+    }
+}
+
+@media (max-width: 900px){
+    /* .box-conoc-principal{
+
+    } */
+
+    .box-contacto-principal{
+        border: none;
+        border-radius: none;
+        background-color: #f5f5f5;
+        box-shadow: none;
+        width: 100%;
+        height: 100%;
+        display: inline;
+        padding: 0em;
+    }
+
+    .box-contacto-contactame{
+        justify-content: center;
+        width: 100%;
+        padding: 0em;
+        margin-bottom: 3em;
+    }
+
+    .box-contacto-texto{
+        text-align: center;
+        width: 70%;
+        padding: 0em;
+    }
+
+    .box-contacto-texto>p{
+        /* text-align: center; */
+        width: 100%;
+    }
+
+    .box-contacto-contactame>.box-contacto-lista>li{
+        width: 100%;           
+    }
+
+    .box-contacto-escribime{
+        width: 100%;
+        height: 100%;
+        padding: 0em 0em 2em 0em;
+    }
+
+    .boton-enviar{
+        margin-top: 1em;
+        padding: .5em;
+        width: 15%;
+    }
+
+    .box-textarea>textarea{
+        height: 10em;  /* cambiar a % */
+    }
+
+    .box-contacto-links>.fa-instagram, .box-contacto-links>.fa-github-alt, .box-contacto-links>.fa-linkedin-in, .box-contacto-links>.fa-envelope{
+        background-color: #f5f5f5;
+        border: 1px solid #f5f5f5;
+    }
+
 }
