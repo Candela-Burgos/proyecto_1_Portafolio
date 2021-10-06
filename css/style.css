@@ -51,7 +51,7 @@ header{
     line-height: 38px;
     padding: 0em 0.938em 0em 0.938em;
     text-decoration: none;
-    color: #2e2e2e;
+    color: #000;
     text-transform: uppercase;
 }
 
@@ -115,7 +115,7 @@ header{
     max-width: 35%;
     font-size: 2.5rem;
     font-weight: bold;
-    color: #2e2e2e;
+    color: #000;
 }
 
 .box-hola-titulo>h1{
@@ -189,7 +189,7 @@ header{
 
 .box-conoc-principal>h2{
     font-size: 3.125rem;
-    color: #2e2e2e;
+    color: #000;
     width: 50%;
     margin: 0.8em 0em 0.6em 0em;
 }
@@ -198,7 +198,7 @@ header{
     font-size: 1.063rem;
     letter-spacing: 1px;
     text-align: center;
-    color: #2e2e2e;
+    color: #000;
     width: 50%;
     margin: 0.7em 0em 0.7em 0em;
 }
@@ -318,7 +318,7 @@ header{
 
 .box-proyectos-principal>h2{
     font-size: 3.125rem;
-    color: #2e2e2e;
+    color: #000;
     width: 38%;
     margin: 1.875em 0em 0.625em 0em;
 }
@@ -435,6 +435,7 @@ header{
     width: 100%;
     font-size: 3.125rem;
     margin-bottom: 0.5em;
+    color: #000;
 }
 
 .box-contacto-texto>p{
@@ -442,44 +443,45 @@ header{
     width: 90%;
     margin-bottom: 0.5em;
     line-height: 23px;
+    color: #000;
 }
 
 .box-contacto-lista{
     display: flex;
     align-content:space-around;
+    flex-wrap: wrap;
     width: 100%;
-    height: 50%;
     margin-top: 0.5em;
 }
 
 .box-contacto-lista>ul>li{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     padding: .2em 0em .2em .1em;
     list-style: none;
 }
 
 .box-contacto-links{
-    text-decoration: none;
-    color: #2e2e2e;
-    padding-bottom: 0.25em;
-}
-
-.box-contacto-links{
     display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
     align-items: center;
+    color: #000;
+    padding-bottom: 0.25em;
 }
 
 .box-contacto-links>.fa-instagram, .box-contacto-links>.fa-github-alt, .box-contacto-links>.fa-linkedin-in, .box-contacto-links>.fa-envelope{
     font-size: 2.5rem;
     margin-right: 0.6em;
     text-align: center;
+    color: #af15d6;
     background-color: #ffffff;
     border: 1px solid #ffffff;
     border-radius: 50%; 
     padding: .2em;
 }
- 
+
 /***********************
     Hover CONTACTAME
 ************************/
@@ -799,9 +801,13 @@ label{
 }
 
 @media (max-width: 900px){
-    /* .box-conoc-principal{
+    .box-conoc{
+        margin: 0em 1em;
+    }
 
-    } */
+    .box-cita-principal>cite{
+        width: 80%;
+    }
 
     .box-contacto-principal{
         border: none;
@@ -822,24 +828,45 @@ label{
     }
 
     .box-contacto-texto{
+        justify-content: center;
         text-align: center;
-        width: 70%;
+        width: 100%;
         padding: 0em;
     }
 
     .box-contacto-texto>p{
-        /* text-align: center; */
         width: 100%;
+        padding: 0em 8em;
     }
 
-    .box-contacto-contactame>.box-contacto-lista>li{
-        width: 100%;           
+    .box-contacto-lista{
+        justify-content: center;
+    }
+
+    .box-contacto-lista>ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;     
+    }
+
+    .box-contacto-lista>ul>li{
+        width: 40%;     
+    }
+
+    .box-contacto-lista>ul>li>.box-contacto-links{
+        text-align: center;
     }
 
     .box-contacto-escribime{
         width: 100%;
         height: 100%;
         padding: 0em 0em 2em 0em;
+    }
+
+    .box-contacto-escribime>h2{
+        text-align: center;
     }
 
     .boton-enviar{
@@ -849,7 +876,7 @@ label{
     }
 
     .box-textarea>textarea{
-        height: 10em;  /* cambiar a % */
+        height: 10em;  
     }
 
     .box-contacto-links>.fa-instagram, .box-contacto-links>.fa-github-alt, .box-contacto-links>.fa-linkedin-in, .box-contacto-links>.fa-envelope{
@@ -857,4 +884,17 @@ label{
         border: 1px solid #f5f5f5;
     }
 
+    .box-conoc-principal>h2{
+        width: 70%;
+        font-size: 4rem;
+    }
+
+    .box-proyectos-principal>h2{
+        width: 70%;
+        font-size: 4rem;
+    }
+
+    .lista>p{
+        width: 100%;
+    }
 }
