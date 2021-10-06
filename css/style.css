@@ -22,7 +22,7 @@ header{
     max-height: 13%;
     width: 100%;
     padding: 1.9em 0em;
-    box-shadow: 0px 3px 30px 0px #dddddd;
+    box-shadow: 0px 5px 10px 1px #dddddd;
     background-color: #ffffff; 
     position: fixed;
     top: 0;
@@ -459,7 +459,7 @@ header{
     list-style: none;
 }
 
-.box-contacto-lista>ul>li>a{
+.box-contacto-links{
     text-decoration: none;
     color: #2e2e2e;
     padding-bottom: 0.25em;
@@ -468,22 +468,6 @@ header{
 .box-contacto-links{
     display: flex;
     align-items: center;
-}
-
-.box-contacto-links>.fa-instagram::before{
-    content: "\f16d";
-}
-
-.box-contacto-links>.fa-github-alt::before{
-    content: "\f113";
-}
-
-.box-contacto-links>.fa-linkedin-in::before{
-    content: "\f0e1";
-}
-
-.box-contacto-links>.fa-envelope::before{
-    content: "\f0e0";
 }
 
 .box-contacto-links>.fa-instagram, .box-contacto-links>.fa-github-alt, .box-contacto-links>.fa-linkedin-in, .box-contacto-links>.fa-envelope{
@@ -500,11 +484,11 @@ header{
     Hover CONTACTAME
 ************************/
 
-.box-contacto-lista>ul>li>a:hover{
+.box-contacto-links:hover{
     color: #af15d6;
 }
 
-.box-contacto-links>.fa-instagram:hover, .box-contacto-links>.fa-github-alt:hover, .box-contacto-links>.fa-linkedin-in:hover, .box-contacto-links>.fa-envelope:hover{
+.box-contacto-links:hover .fa-instagram, .box-contacto-links:hover .fa-github-alt, .box-contacto-links:hover .fa-linkedin-in, .box-contacto-links:hover .fa-envelope{
     border-radius: 50%;
     text-align: center;
     color: #ffffff;
@@ -512,7 +496,7 @@ header{
     border: 1px solid #af15d6;
     color: #ffffff;
     transition: .3s;
-} 
+}
 
 /***********************
      Caja ESCRIBIME
