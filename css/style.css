@@ -5,6 +5,11 @@
     font-family: 'Glory', sans-serif;
 }
 
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
 /***************************
      SOMBRA DE LA PAGINA 
 ***************************/
@@ -354,7 +359,7 @@ header{
     flex: 0 1 31%;
     text-decoration: none;
     color: #2e2e2e;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     background-color: #ffffff;
     max-width: 31%;
     max-height: 35%;
@@ -694,11 +699,30 @@ label{
     list-style: none;
 }
 
+.lista>.centrar-ul-i{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: 1em 0em;
+    list-style: none;
+}
+
 .lista>.centrar-ul>li{
     margin: 0em .5em 0em .5em;
 }
 
+.lista>.centrar-ul-i>li{
+    margin: 0em .5em 0em .5em;
+}
+
 .lista>.centrar-ul>li>a{
+    font-size: 1em;
+    color: #2e2e2e;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.lista>.centrar-ul>li>.icon-a{
     font-size: 1em;
     color: #2e2e2e;
     text-decoration: none;
@@ -711,7 +735,7 @@ label{
     transition: .3s;
 }
 
-.lista>.centrar-ul>li>.icon-a{
+.lista>.centrar-ul-i>li>.icon-a{
     font-size: 1.5em;
     color: #af15d6;
     text-align: center;
@@ -721,7 +745,7 @@ label{
     border: 1px solid #ffffff;
 }
 
-.lista>.centrar-ul>li>.icon-a:hover{
+.lista>.centrar-ul-i>li>.icon-a:hover{
     background-color: transparent;
     border: 1px solid #af15d6;
     transition: .3s;
@@ -910,9 +934,13 @@ label{
     }
 
     .boton-enviar{
-        margin-top: 1em;
+        margin-top: .5em;
         padding: .5em;
         width: 15%;
+    }
+
+    .box-textarea{
+        margin-bottom: 0;
     }
 
     .box-textarea>textarea{
@@ -952,6 +980,195 @@ label{
     }
 }
 
+@media (max-width: 854px){
+    .box-contacto-lista>ul{
+        width: 100%;
+    }
+}
+
+@media (max-width: 792px){
+    .seccion-hola{
+        padding-top: 5em;
+        padding-bottom: 5em;
+        margin-top: 8em;
+    }
+
+    .box-hola-titulo>h1{
+        font-size: 4.8em;
+    }
+
+    .box-hola-img{
+        max-width: 80%;
+    }
+    
+    .box-proyectos-boxes{
+        width: 80%;
+    }
+
+    .box-proyectos{
+        flex: 0 1 46%;
+        max-width: 46%;
+    }
+
+    .box-cita-principal>img{
+        width: 15%;
+    }
+}
+
+@media (max-width: 776px) {
+    .box-contacto-lista>ul>li{
+        width: 50%;
+    }
+}
+
+@media (max-width: 738px){
+    .box-conoc-principal>h2{
+        font-size: 3em;
+    }
+
+    .box-proyectos-principal>h2{
+        font-size: 3em;
+    }
+
+    .box-contacto-texto>p{
+       padding: 0em 3em;
+    }
+
+    .box-hola-titulo>.descripcion{
+        font-size: 1.2em;
+    }
+
+    .box-hola-titulo>h1{
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 700px){
+    .seccion-hola{
+        margin-top: 3.5em;
+    }
+
+    .box-proyectos-boxes{
+        width: 100%;
+    }
+
+    .box-conoc-boxes{
+        width: 100%;
+    }
+
+    .lista>.centrar-ul>li>a{
+        visibility: hidden;
+    }
+
+}
+
 @media (max-width: 600px){
-    /* conoc cambia */
+    .box-conoc{
+        flex: 0 1 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 580px){
+    .box-conoc{
+        flex: 0 1 45%;
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 550px){
+    .box-proyectos-boxes{
+        justify-content: center;
+    }
+
+    .box-proyectos{
+        justify-self: center;
+        flex: 0 1 90%;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 500px){
+    .box-hola-titulo>h1{
+        font-size: 3em;
+    }
+
+    .box-hola-titulo>.boton{
+        font-size: .8em;
+    }
+
+    .box-contacto-lista{
+        display: flex;
+        align-content:space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 0.5em;
+    }
+     
+    .box-contacto-lista>ul>li{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: .2em 0em .2em .1em;
+        list-style: none;
+    }
+}
+
+@media (max-width: 500px){
+    .box-hola-principal{
+        width: 100%;
+    }
+
+    .box-conoc-principal>h2{
+        width: 100%;
+        font-size: 2.3em;
+    }
+
+    .box-proyectos-principal>h2{
+        width: 100%;
+        font-size: 2.3em;
+    }
+
+    .box-conoc-principal>p{
+        width: 100%;
+    }
+
+    .box-proyectos-principal>p{
+        width: 100%;
+    }
+
+    .box-hola-titulo>.hola{
+        
+        font-size: 2em;
+    }
+
+    .box-hola-titulo>.descripcion{
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    .box-hola-titulo>h1{
+        max-width: 100%;
+        font-size: 4em;
+    }
+
+    .box-cita-principal{
+        width: 100%;
+    }
+
+    .box-cita-principal>cite{
+        width: 100%;
+    }
+
+    .box-first-second-name{
+        display: inline;
+    }
+
+    .box-first-second-name>.box-name{
+        width: 100%;
+    }
+
+    .box-first-second-name>.box-second-name{
+        margin-left: 0em;
+    }
 }
