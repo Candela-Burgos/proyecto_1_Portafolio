@@ -1115,6 +1115,10 @@ label{
 }
 
 @media (max-width: 500px){
+    .seccion-hola{
+        padding: 2em 2em;
+    }
+
     .box-hola-principal{
         width: 100%;
     }
