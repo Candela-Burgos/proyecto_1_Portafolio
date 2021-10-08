@@ -4,11 +4,11 @@ Este es el proyecto final de la primera etapa del curso de Frontend en Ada ITW.
 
 ## Mis secciones:
 
-* [Hola](https://candela-burgos.github.io/proyecto_1_Portafolio#hola)
-* [Mis conocimientos](https://candela-burgos.github.io/proyecto_1_Portafolio#conocimientos)
-* [Cita](https://candela-burgos.github.io/proyecto_1_Portafolio#cita)
-* [Mis proyectos](https://candela-burgos.github.io/proyecto_1_Portafolio#proyectos)
-* [Contacto](https://candela-burgos.github.io/proyecto_1_Portafolio#contacto)
+* [Hola](https://github.com/Candela-Burgos/proyecto_1_Portafolio#hola)
+* [Mis conocimientos](https://github.com/Candela-Burgos/proyecto_1_Portafolio#conocimientos)
+* [Cita](https://github.com/Candela-Burgos/proyecto_1_Portafolio#cita)
+* [Mis proyectos](https://github.com/Candela-Burgos/proyecto_1_Portafolio#proyectos)
+* [Contacto](https://github.com/Candela-Burgos/proyecto_1_Portafolio#contacto)
 
 ## Hola
 
