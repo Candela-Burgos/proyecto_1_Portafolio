@@ -14,7 +14,7 @@ Este es el proyecto final de la primera etapa del curso de Frontend en Ada ITW.
 
 En esta sección puedes encontrar información sobre mis gustos y aficiones.
 
-![Imagen de la sección Hola](readme/portafolio.png)
+![Imagen de la sección Hola](readme/hola.png)
 
 ## Conocimientos
 
