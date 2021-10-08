@@ -1,6 +1,6 @@
 # Mi Portafolio
 
-Este es el proyecto final de la primera etapa del curso de Frontend en Ada ITW.
+Este es el proyecto final de la primera etapa de la carrera de Frontend en Ada ITW.
 
 ## Mis secciones:
 
