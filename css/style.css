@@ -1235,6 +1235,10 @@ label{
     .box-contacto-texto>p{
         padding: 0em;
     }
+
+    .box-cita-principal>h2{
+        width: 100%;
+    }
 }
 
 @media (max-width: 458px){
