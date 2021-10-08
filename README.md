@@ -7,7 +7,7 @@ Este es el proyecto final de la primera etapa del curso de Frontend en Ada ITW.
 * [Hola](https://candela-burgos.github.io/proyecto_1_Portafolio#hola)
 * [Mis conocimientos](https://candela-burgos.github.io/proyecto_1_Portafolio#conocimientos)
 * [Cita](https://candela-burgos.github.io/proyecto_1_Portafolio#cita)
-* [MIs proyectos](https://candela-burgos.github.io/proyecto_1_Portafolio#proyectos)
+* [Mis proyectos](https://candela-burgos.github.io/proyecto_1_Portafolio#proyectos)
 * [Contacto](https://candela-burgos.github.io/proyecto_1_Portafolio#contacto)
 
 ## Hola
