@@ -1107,6 +1107,32 @@ label{
 
 }
 
+@media (max-width: 615px){
+    .box-contacto-lista{
+        display: flex;
+        align-content:space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 0.5em;
+    }
+     
+    .box-contacto-lista>ul>li{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: .2em 0em .2em .1em;
+        list-style: none;
+    }
+
+    .box-cita-principal{
+        width: 100%;
+    }
+
+    .box-cita-principal>cite{
+        width: 100%;
+    }
+}
+
 @media (max-width: 600px){
     .box-conoc{
         flex: 0 1 50%;
@@ -1118,6 +1144,30 @@ label{
     .box-conoc{
         flex: 0 1 45%;
         max-width: 45%;
+    }
+    
+    .box-cita-principal{
+        width: 100%;
+    }
+
+    .box-cita-principal>cite{
+        width: 100%;
+    }
+}
+
+@media (max-width: 559px){
+    .box-proyectos-boxes{
+        justify-content: center;
+    }
+
+    .box-proyectos{
+        justify-self: center;
+        flex: 0 1 90%;
+        max-width: 90%;
+    }
+
+    .box-proyectos{
+        font-size: 1.5rem;
     }
 }
 
@@ -1151,24 +1201,6 @@ label{
         width: 40%;
     }
 
-    .box-contacto-lista{
-        display: flex;
-        align-content:space-around;
-        flex-wrap: wrap;
-        width: 100%;
-        margin-top: 0.5em;
-    }
-     
-    .box-contacto-lista>ul>li{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        padding: .2em 0em .2em .1em;
-        list-style: none;
-    }
-}
-
-@media (max-width: 500px){
     .seccion-hola{
         padding: 2em 2em;
     }
