@@ -1155,6 +1155,26 @@ label{
     }
 }
 
+@media (max-width: 575px){
+    .box-conoc-principal>h2{
+        width: 100%;
+        font-size: 2.3em;
+    }
+
+    .box-proyectos-principal>h2{
+        width: 100%;
+        font-size: 2.3em;
+    }
+
+    .box-conoc-principal>p{
+        width: 100%;
+    }
+
+    .box-proyectos-principal>p{
+        width: 100%;
+    }
+}
+
 @media (max-width: 559px){
     .box-proyectos-boxes{
         justify-content: center;
@@ -1206,24 +1226,6 @@ label{
     }
 
     .box-hola-principal{
-        width: 100%;
-    }
-
-    .box-conoc-principal>h2{
-        width: 100%;
-        font-size: 2.3em;
-    }
-
-    .box-proyectos-principal>h2{
-        width: 100%;
-        font-size: 2.3em;
-    }
-
-    .box-conoc-principal>p{
-        width: 100%;
-    }
-
-    .box-proyectos-principal>p{
         width: 100%;
     }
 
