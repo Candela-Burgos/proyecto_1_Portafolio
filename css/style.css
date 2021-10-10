@@ -96,7 +96,8 @@ header{
 }
 
 .ul-links>li>.links:hover{
-    color: #af15d6;    
+    color: #af15d6;  
+    text-shadow: 1px 1px 1px #af15d6;  
 }
 
 /******************
